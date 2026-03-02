@@ -24,9 +24,9 @@
               }
             },
             "url": {
-              "raw": "{{host}}login",
+              "raw": "{{localhost}}login",
               "host": [
-                "{{host}}login"
+                "{{localhost}}login"
               ]
             }
           },
@@ -76,9 +76,59 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{host}}me",
+              "raw": "{{localhost}}me",
               "host": [
-                "{{host}}me"
+                "{{localhost}}me"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "All user",
+          "id": "36e317db-c205-4c36-a8a8-0a5a14996bab",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}alluser",
+              "host": [
+                "{{localhost}}alluser"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "All Technician",
+          "id": "b84a9f89-5414-40b4-b81d-789775593bd5",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}alltechnician",
+              "host": [
+                "{{localhost}}alltechnician"
               ]
             }
           },
@@ -138,9 +188,9 @@
               ]
             },
             "url": {
-              "raw": "{{host}}ticket/create",
+              "raw": "{{localhost}}ticket/create",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "create"
@@ -189,9 +239,9 @@
               ]
             },
             "url": {
-              "raw": "{{host}}ticket/update/c2ee380b-b3d0-47e6-bca8-ffa73a610076",
+              "raw": "{{localhost}}ticket/update/c2ee380b-b3d0-47e6-bca8-ffa73a610076",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "update",
@@ -225,9 +275,9 @@
               }
             },
             "url": {
-              "raw": "{{host}}ticket/changestatus/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
+              "raw": "{{localhost}}ticket/changestatus/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
@@ -253,9 +303,9 @@
               }
             },
             "url": {
-              "raw": "{{host}}ticket/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae/assignticket/",
+              "raw": "{{localhost}}ticket/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae/assignticket/",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
@@ -273,9 +323,9 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{host}}ticket/getall",
+              "raw": "{{localhost}}ticket/getall",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "getall"
@@ -298,9 +348,9 @@
               "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
             },
             "url": {
-              "raw": "{{host}}ticket/getbyfilter",
+              "raw": "{{localhost}}ticket/getbyfilter",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "getbyfilter"
@@ -323,9 +373,9 @@
               "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
             },
             "url": {
-              "raw": "{{host}}ticket/assigned/me",
+              "raw": "{{localhost}}ticket/assigned/me",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "assigned",
@@ -349,9 +399,9 @@
               "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
             },
             "url": {
-              "raw": "{{host}}ticket/assigned/69708eb73e4fd122f49f8acf",
+              "raw": "{{localhost}}ticket/assigned/69708eb73e4fd122f49f8acf",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "assigned",
@@ -368,9 +418,9 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{host}}ticket/attachments/4cd9dc8a-61ce-4268-b1f6-cb4e9890badf",
+              "raw": "{{localhost}}ticket/attachments/4cd9dc8a-61ce-4268-b1f6-cb4e9890badf",
               "host": [
-                "{{host}}ticket"
+                "{{localhost}}ticket"
               ],
               "path": [
                 "attachments",
@@ -387,6 +437,102 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "status history",
+          "id": "920ababf-5d10-4111-9d42-858387279678",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/getstatushistory?page=1&limit=2",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "getstatushistory"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "uuid": "84cc8f21-3f66-4259-87fd-e5c676d11e6c"
+                },
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "uuid": "1b9622b9-51f9-4ca8-81bc-304c7e166c17"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assignment history",
+          "id": "330fe147-315f-4241-a62e-f6e86e452602",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/getassignmenthistory?page=1&limit=2",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "getassignmenthistory"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "status history ticket",
+          "id": "f3c16745-8438-42ec-a04e-15f8d38c101c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/statushistoryticket/354bf496-a71d-4385-a5c2-d323ea2f03e5",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "statushistoryticket",
+                "354bf496-a71d-4385-a5c2-d323ea2f03e5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "remove assign",
+          "id": "5feac4e4-d95b-44dc-b016-9d3252672b70",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae/assign",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
+                "assign"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "0372d977-3d35-46b4-a324-97c657b23856"
@@ -397,7 +543,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQyMDE1MiwiZXhwIjoxNzcyNDMwOTUyfQ.4uv3MWW5hSu1wjZ5zN1HxzeWxlkFLskrusjsX6tGHoI",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
         "type": "string"
       }
     ]
