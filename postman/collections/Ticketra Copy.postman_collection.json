@@ -1,0 +1,405 @@
+{
+  "info": {
+    "_postman_id": "55f8ed66-b388-4362-95eb-9b20481af9b4",
+    "name": "Ticketra Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "id": "fc4298ec-279f-4758-8516-8710a7dedee3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"developer.cello01@gmail.com\",\r\n  \"password\": \"Marcello21\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}login",
+              "host": [
+                "{{host}}login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register",
+          "id": "fe9191f1-5d38-47a9-9a18-608aa57106b1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"cello01\",\r\n    \"password\":\"cello123\",\r\n    \"name\":\"Marcello\",\r\n    \"role\":\"FINANCE\" \r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}auth/register",
+              "host": [
+                "{{host}}auth"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "userProfile",
+          "id": "3fc13c3d-5361-414c-8535-3bc0f3da6e80",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjE1OTg3NiwiZXhwIjoxNzcyMTcwNjc2fQ.2l2az-PCYVmw-92JU9uGjjv7CojB0sNUiiCBDEGbm30",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}me",
+              "host": [
+                "{{host}}me"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "082f4b5f-2e85-4ae9-aba8-167472d9c09d",
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjA3MDg4NCwiZXhwIjoxNzcyMDgxNjg0fQ.i1g2BNuS6v0DQ-ZY_MdjtmlS2AUW5q8ezGttvzBYUyM",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ticket",
+      "item": [
+        {
+          "name": "create",
+          "id": "13cad05a-3d6c-476e-9138-106920b2ffac",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "categoryId",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "89290906-1d79-44a9-9bce-f22aafb73449"
+                },
+                {
+                  "key": "title",
+                  "value": "test",
+                  "type": "text",
+                  "uuid": "e5645112-4d47-45a5-9f70-cafe53e437b9"
+                },
+                {
+                  "key": "description",
+                  "value": "test",
+                  "type": "text",
+                  "uuid": "661e740b-df3c-43e3-bbda-26d7fc061811"
+                },
+                {
+                  "key": "attachments",
+                  "type": "file",
+                  "uuid": "f53997cd-03ad-4eb9-90b3-5dfa05bef844",
+                  "src": [
+                    "/C:/Users/itakn/OneDrive/Pictures/Screenshots/Screenshot 2025-09-29 150900.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host}}ticket/create",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "id": "7207a552-c5e1-4aa3-b0db-d089a13db2ca",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Tadinya ticket kelima tapi tetep 5",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Testing Update with file",
+                  "type": "text"
+                },
+                {
+                  "key": "categoryId",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "priorityId",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "attachments",
+                  "type": "file",
+                  "uuid": "802d4cf9-662e-492a-8fbd-8314fb54d9ad",
+                  "src": [
+                    "/C:/Users/iotal/Downloads/All_About_Task-removebg-preview.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host}}ticket/update/c2ee380b-b3d0-47e6-bca8-ffa73a610076",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "update",
+                "c2ee380b-b3d0-47e6-bca8-ffa73a610076"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "change status",
+          "id": "3dedb559-dfc4-43c3-8fac-042b65df13fb",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"statusId\":2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}ticket/changestatus/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "changestatus",
+                "55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assign ticket",
+          "id": "598fcaf2-d964-4cd4-8c27-690a64db3f59",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"assignedToId\": \"69708eb73e4fd122f49f8acf\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{host}}ticket/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae/assignticket/",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
+                "assignticket",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All",
+          "id": "15608747-06aa-49fe-a2a3-18ec03702075",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{host}}ticket/getall",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get by filter",
+          "id": "4563d11c-e7dc-4976-a2cb-ade90f891024",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
+            },
+            "url": {
+              "raw": "{{host}}ticket/getbyfilter",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "getbyfilter"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assignedToMe",
+          "id": "05301253-ab67-497d-ba8d-033ba3f41840",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
+            },
+            "url": {
+              "raw": "{{host}}ticket/assigned/me",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "assigned",
+                "me"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assigned to user",
+          "id": "644c41fe-8500-412a-a8d9-4fc626236282",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"categoryId\": 1,\r\n    \"title\": \"Ticket  Testing\",\r\n    \"description\": \"Ticket testing untuk IT\"\r\n}"
+            },
+            "url": {
+              "raw": "{{host}}ticket/assigned/69708eb73e4fd122f49f8acf",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "assigned",
+                "69708eb73e4fd122f49f8acf"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete attachment",
+          "id": "c0e3c767-40c6-4ec6-9577-0e1b62ab258c",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{host}}ticket/attachments/4cd9dc8a-61ce-4268-b1f6-cb4e9890badf",
+              "host": [
+                "{{host}}ticket"
+              ],
+              "path": [
+                "attachments",
+                "4cd9dc8a-61ce-4268-b1f6-cb4e9890badf"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "0372d977-3d35-46b4-a324-97c657b23856"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQyMDE1MiwiZXhwIjoxNzcyNDMwOTUyfQ.4uv3MWW5hSu1wjZ5zN1HxzeWxlkFLskrusjsX6tGHoI",
+        "type": "string"
+      }
+    ]
+  }
+}
