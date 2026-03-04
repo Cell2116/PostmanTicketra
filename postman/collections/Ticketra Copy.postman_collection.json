@@ -93,7 +93,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjUyNjQ5NiwiZXhwIjoxNzcyNTM3Mjk2fQ.SwnHKmc52Ofa1I4c0x7Iv0pZgchNs423aVKkowkrpVA",
                   "type": "string"
                 }
               ]
@@ -184,6 +184,12 @@
                   "src": [
                     "/C:/Users/itakn/OneDrive/Pictures/Screenshots/Screenshot 2025-09-29 150900.png"
                   ]
+                },
+                {
+                  "key": "workTypeId",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "60ce15f9-e82d-4ad3-a7fb-801e34247127"
                 }
               ]
             },
@@ -329,6 +335,24 @@
               ],
               "path": [
                 "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get ticket today",
+          "id": "cb2bc1cd-df17-473e-8519-90ea7901204d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/create",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "create"
               ]
             }
           },
@@ -543,7 +567,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjU4ODg0NywiZXhwIjoxNzcyNTk5NjQ3fQ.AKx7l-bZmUv5wQks9LiEnGJWd71JBqMoFjjgTsbzqno",
         "type": "string"
       }
     ]
