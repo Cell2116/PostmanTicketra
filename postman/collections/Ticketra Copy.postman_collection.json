@@ -359,6 +359,24 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get summary",
+          "id": "abb09936-e3f0-49dd-97ef-f86bdb2ddf50",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/getsummary",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "getsummary"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "0372d977-3d35-46b4-a324-97c657b23856"
@@ -583,6 +601,133 @@
         }
       ],
       "id": "156c9bc0-0aab-4d5b-a987-3979115f2a7b"
+    },
+    {
+      "name": "Work Type",
+      "item": [
+        {
+          "name": "get all worktype",
+          "id": "dd8f0c48-6e68-49b2-85b8-4a95cd272380",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/getall",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get by id",
+          "id": "a348e285-c2de-4f67-95d8-ef250dce4c42",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/getbyid/",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "getbyid",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get by category",
+          "id": "561d1d25-9a98-4fee-af94-b763507d506d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/category/",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "category",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "551edeb3-a048-456f-92e1-d5e6a4af5622",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Testing\",\r\n    \"categoryId\": 1,\r\n    \"estimatedMinutes\": 20,\r\n    \"defaultResponseMin\": 14,\r\n    \"defaultResolveMin\": 12\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}worktype/create",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "id": "504bbded-7287-4ddd-b78c-366b4ddc54e4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/update/",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "update",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "4a5103a9-61aa-40c4-b532-d1f01344ecf4",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/delete/",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "delete",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e3782eed-adbf-4df3-99aa-721bb72a90f2"
     }
   ],
   "auth": {
