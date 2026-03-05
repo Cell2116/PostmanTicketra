@@ -93,7 +93,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjUyNjQ5NiwiZXhwIjoxNzcyNTM3Mjk2fQ.SwnHKmc52Ofa1I4c0x7Iv0pZgchNs423aVKkowkrpVA",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjY5NTE4NSwiZXhwIjoxNzcyNzA1OTg1fQ.ouDfdlrzy5zSBudKuWeSibQgPtYaZRMt3bndaD86zR8",
                   "type": "string"
                 }
               ]
@@ -161,13 +161,13 @@
               "formdata": [
                 {
                   "key": "categoryId",
-                  "value": "2",
+                  "value": "1",
                   "type": "text",
                   "uuid": "89290906-1d79-44a9-9bce-f22aafb73449"
                 },
                 {
                   "key": "title",
-                  "value": "testing title with worktype otherdetail 2",
+                  "value": "testing ticket with response dueat 4",
                   "type": "text",
                   "uuid": "e5645112-4d47-45a5-9f70-cafe53e437b9"
                 },
@@ -187,13 +187,13 @@
                 },
                 {
                   "key": "workTypeId",
-                  "value": "",
+                  "value": "1",
                   "type": "text",
                   "uuid": "60ce15f9-e82d-4ad3-a7fb-801e34247127"
                 },
                 {
                   "key": "otherDetail",
-                  "value": "Data Migration 2",
+                  "value": "",
                   "type": "text",
                   "uuid": "493effd3-3b66-485b-95d1-a4733ccf31a8"
                 }
@@ -279,7 +279,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"statusId\":2\r\n}",
+              "raw": "{\r\n    \"statusId\": 5\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -287,13 +287,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/changestatus/55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae",
+              "raw": "{{localhost}}ticket/changestatus/11326421-419f-464d-8e53-363d5c03397d",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
-                "55c5c6ac-24cd-4d02-8fbf-2a0b888ab7ae"
+                "11326421-419f-464d-8e53-363d5c03397d"
               ]
             }
           },
@@ -508,12 +508,12 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{localhost}}assign/cffdf0bf-b308-499b-a218-8a9a7a9bc834/assign",
+              "raw": "{{localhost}}assign/11326421-419f-464d-8e53-363d5c03397d/assign",
               "host": [
                 "{{localhost}}assign"
               ],
               "path": [
-                "cffdf0bf-b308-499b-a218-8a9a7a9bc834",
+                "11326421-419f-464d-8e53-363d5c03397d",
                 "assign"
               ]
             }
@@ -586,12 +586,12 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}assign/cffdf0bf-b308-499b-a218-8a9a7a9bc834/assignticket/",
+              "raw": "{{localhost}}assign/11326421-419f-464d-8e53-363d5c03397d/assignticket/",
               "host": [
                 "{{localhost}}assign"
               ],
               "path": [
-                "cffdf0bf-b308-499b-a218-8a9a7a9bc834",
+                "11326421-419f-464d-8e53-363d5c03397d",
                 "assignticket",
                 ""
               ]
@@ -630,13 +630,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}worktype/getbyid/",
+              "raw": "{{localhost}}worktype/getbyid/2",
               "host": [
                 "{{localhost}}worktype"
               ],
               "path": [
                 "getbyid",
-                ""
+                "2"
               ]
             }
           },
@@ -649,13 +649,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}worktype/category/",
+              "raw": "{{localhost}}worktype/category/1",
               "host": [
                 "{{localhost}}worktype"
               ],
               "path": [
                 "category",
-                ""
+                "1"
               ]
             }
           },
@@ -669,7 +669,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"Testing\",\r\n    \"categoryId\": 1,\r\n    \"estimatedMinutes\": 20,\r\n    \"defaultResponseMin\": 14,\r\n    \"defaultResolveMin\": 12\r\n}",
+              "raw": "{\r\n    \"name\": \"Buat Master\",\r\n    \"categoryId\": 2,\r\n    \"estimatedMinutes\": 20,\r\n    \"defaultResponseMin\": 14,\r\n    \"defaultResolveMin\": 12\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -708,7 +708,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "delete worktype",
           "id": "4a5103a9-61aa-40c4-b532-d1f01344ecf4",
           "request": {
             "method": "DELETE",
@@ -728,6 +728,124 @@
         }
       ],
       "id": "e3782eed-adbf-4df3-99aa-721bb72a90f2"
+    },
+    {
+      "name": "Technician",
+      "item": [
+        {
+          "name": "leaderboard",
+          "id": "f8f43ba3-8048-4f69-b622-34cca93a4e5d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \r\n    \"date\": \"2026-03-05\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}technician/leaderboard",
+              "host": [
+                "{{localhost}}technician"
+              ],
+              "path": [
+                "leaderboard"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "report range",
+          "id": "fbb7cbd4-fe69-4153-8fa8-6173a0373869",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/range?startDate=2026-03-01&endDate=2026-03-05",
+              "host": [
+                "{{localhost}}technician"
+              ],
+              "path": [
+                "6982f9047f9d1d1dbe5afcc7",
+                "range"
+              ],
+              "query": [
+                {
+                  "key": "startDate",
+                  "value": "2026-03-01"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2026-03-05"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "daily",
+          "id": "0ec4d132-be7e-414a-9894-bcf9b67d386c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \r\n    \"date\": \"2026-03-05\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/daily",
+              "host": [
+                "{{localhost}}technician"
+              ],
+              "path": [
+                "6982f9047f9d1d1dbe5afcc7",
+                "daily"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "generate",
+          "id": "c6c2e5e9-44e1-4c22-9337-511457c37a86",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \r\n    \"date\": \"2026-03-05\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/generate",
+              "host": [
+                "{{localhost}}technician"
+              ],
+              "path": [
+                "6982f9047f9d1d1dbe5afcc7",
+                "generate"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7200cc95-512e-4b69-b953-5e17d76f3885"
     }
   ],
   "auth": {
@@ -735,7 +853,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjYwNTI1NSwiZXhwIjoxNzcyNjE2MDU1fQ.ucMmsW2Y9gcfypNd74zyqqiJcKNCLiWeT4P9FcuIHww",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjY5OTA1OSwiZXhwIjoxNzcyNzA5ODU5fQ.X-pXIC7SiMLTwpvdBumcufscHoakr2Wrh6jda4a8NZo",
         "type": "string"
       }
     ]
