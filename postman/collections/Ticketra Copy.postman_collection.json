@@ -68,7 +68,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjE1OTg3NiwiZXhwIjoxNzcyMTcwNjc2fQ.2l2az-PCYVmw-92JU9uGjjv7CojB0sNUiiCBDEGbm30",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzAyMjMyNywiZXhwIjoxNzczMDMzMTI3fQ.4J4WjhlU6-aU3QzzKVz22rjgV_6OP2h_1OhG2KQjGQY",
                   "type": "string"
                 }
               ]
@@ -373,6 +373,46 @@
               ],
               "path": [
                 "getsummary"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all ticket user",
+          "id": "041108ee-41fa-4d79-b046-bd3e61cf42c2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [],
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}ticket/getuserticket/69708eb73e4fd122f49f8acf?page=1&limit=2",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "getuserticket",
+                "69708eb73e4fd122f49f8acf"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "uuid": "677f1ee9-3408-4c12-9335-9ddbf2592f8d"
+                },
+                {
+                  "key": "limit",
+                  "value": "2",
+                  "uuid": "244f8fa4-ee6f-4a90-a30d-089425351a65"
+                }
               ]
             }
           },
@@ -853,7 +893,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjY5OTA1OSwiZXhwIjoxNzcyNzA5ODU5fQ.X-pXIC7SiMLTwpvdBumcufscHoakr2Wrh6jda4a8NZo",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzAyMjMyNywiZXhwIjoxNzczMDMzMTI3fQ.4J4WjhlU6-aU3QzzKVz22rjgV_6OP2h_1OhG2KQjGQY",
         "type": "string"
       }
     ]
