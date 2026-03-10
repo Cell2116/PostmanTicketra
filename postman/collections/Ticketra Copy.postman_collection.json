@@ -167,7 +167,7 @@
                 },
                 {
                   "key": "title",
-                  "value": "testing ticket with response dueat 4",
+                  "value": "testing ticket with response dueat 6",
                   "type": "text",
                   "uuid": "e5645112-4d47-45a5-9f70-cafe53e437b9"
                 },
@@ -187,13 +187,13 @@
                 },
                 {
                   "key": "workTypeId",
-                  "value": "1",
+                  "value": "",
                   "type": "text",
                   "uuid": "60ce15f9-e82d-4ad3-a7fb-801e34247127"
                 },
                 {
                   "key": "otherDetail",
-                  "value": "",
+                  "value": "asdasd",
                   "type": "text",
                   "uuid": "493effd3-3b66-485b-95d1-a4733ccf31a8"
                 }
@@ -394,7 +394,7 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/getuserticket/69708eb73e4fd122f49f8acf?page=1&limit=2",
+              "raw": "{{localhost}}ticket/getuserticket/69708eb73e4fd122f49f8acf?page=1&limit=2&statusId=1",
               "host": [
                 "{{localhost}}ticket"
               ],
@@ -412,6 +412,11 @@
                   "key": "limit",
                   "value": "2",
                   "uuid": "244f8fa4-ee6f-4a90-a30d-089425351a65"
+                },
+                {
+                  "key": "statusId",
+                  "value": "1",
+                  "uuid": "dfff8eda-8ef0-44ea-9821-614e5d8c082d"
                 }
               ]
             }
@@ -926,7 +931,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"message\"\r\n}",
+              "raw": "{\r\n    \"comment\": \"Testing COmment\",\r\n    \"isInternal\": false\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -971,13 +976,59 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}comment/get/2e4e3b79-5bb8-41ef-987d-7aacf4ab89b8",
+              "raw": "{{localhost}}comment/get/a830b346-d107-4d56-a8f7-1c12aa63ee87",
               "host": [
                 "{{localhost}}comment"
               ],
               "path": [
                 "get",
-                "2e4e3b79-5bb8-41ef-987d-7aacf4ab89b8"
+                "a830b346-d107-4d56-a8f7-1c12aa63ee87"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "b9166283-d5d4-4271-8a73-c5e9cb24749c",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}comment/d57eff2e-d95a-426e-a37f-8fb1e195d824",
+              "host": [
+                "{{localhost}}comment"
+              ],
+              "path": [
+                "d57eff2e-d95a-426e-a37f-8fb1e195d824"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Comment",
+          "id": "d014fad1-be88-412f-95cf-45aadbb97ebb",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"comment\": \"Testing update comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}comment/update/a830b346-d107-4d56-a8f7-1c12aa63ee87",
+              "host": [
+                "{{localhost}}comment"
+              ],
+              "path": [
+                "update",
+                "a830b346-d107-4d56-a8f7-1c12aa63ee87"
               ]
             }
           },
@@ -992,7 +1043,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzA0MTE3OCwiZXhwIjoxNzczMDUxOTc4fQ.lVFb8xjEJAB1u-5od3ZahTI9CnSIN_qFfpAeh2V95Sc",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzEwODkyMywiZXhwIjoxNzczMTE5NzIzfQ.hObyai2V5IDd-46pSbzw4jSnCOPaldhcuh-81P-vFB0",
         "type": "string"
       }
     ]
