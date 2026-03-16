@@ -287,13 +287,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/changestatus/11326421-419f-464d-8e53-363d5c03397d",
+              "raw": "{{localhost}}ticket/changestatus/03add359-7455-42ed-abf8-56185ed8e485",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
-                "11326421-419f-464d-8e53-363d5c03397d"
+                "03add359-7455-42ed-abf8-56185ed8e485"
               ]
             }
           },
@@ -1036,6 +1036,114 @@
         }
       ],
       "id": "07995d6b-4278-442b-9257-23a5d93a1333"
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "get all",
+          "id": "3d9d886f-02bb-45b9-ad8b-cc5b210a0e4a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}category/get",
+              "host": [
+                "{{localhost}}category"
+              ],
+              "path": [
+                "get"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "c04570a7-c52f-4891-a39f-698dfeb59fd2",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzY1MTE3OCwiZXhwIjoxNzczNjYxOTc4fQ.QpLlMO1E3rE6Bcu_tfYo6Mt9TeYN0hCMI4GjwCXFlFY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Testingupdate2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}category/update/5",
+              "host": [
+                "{{localhost}}category"
+              ],
+              "path": [
+                "update",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "c1fbcee6-dada-4fc0-a48a-7437e5f41c94",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}category/delete/5",
+              "host": [
+                "{{localhost}}category"
+              ],
+              "path": [
+                "delete",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "81ed0c7e-4630-4a42-bd99-7056ca8291db",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"TestingCreateNew\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}category/create",
+              "host": [
+                "{{localhost}}category"
+              ],
+              "path": [
+                "create"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c36abb8c-1acb-45ce-8bb2-371f91a6fa21"
     }
   ],
   "auth": {
@@ -1043,7 +1151,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzEwODkyMywiZXhwIjoxNzczMTE5NzIzfQ.hObyai2V5IDd-46pSbzw4jSnCOPaldhcuh-81P-vFB0",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzY1MTE3OCwiZXhwIjoxNzczNjYxOTc4fQ.QpLlMO1E3rE6Bcu_tfYo6Mt9TeYN0hCMI4GjwCXFlFY",
         "type": "string"
       }
     ]
