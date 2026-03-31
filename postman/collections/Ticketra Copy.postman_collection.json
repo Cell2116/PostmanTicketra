@@ -16,7 +16,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"email\": \"developer.cello01@gmail.com\",\r\n  \"password\": \"Marcello21\"\r\n}",
+              "raw": "// {\r\n//   \"email\": \"developer.cello01@gmail.com\",\r\n//   \"password\": \"Marcello21\"\r\n// }\r\n{\r\n  \"email\": \"superadmin@gmail.com\",\r\n  \"password\": \"SuperadminIT2026\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -118,7 +118,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjQ0MDg4NiwiZXhwIjoxNzcyNDUxNjg2fQ.zLq64pIIfN-TOAJHo8B8Wr5U76Pxiw-74foKU_qUi1I",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDg1NjQ5NSwiZXhwIjoxNzc0ODY3Mjk1fQ.IqF1N6RplMUsmcdEliXNA7rT0LHUgcIm1ti4qXZKElc",
                   "type": "string"
                 }
               ]
@@ -161,19 +161,19 @@
               "formdata": [
                 {
                   "key": "categoryId",
-                  "value": "1",
+                  "value": "2",
                   "type": "text",
                   "uuid": "89290906-1d79-44a9-9bce-f22aafb73449"
                 },
                 {
                   "key": "title",
-                  "value": "testing ticket with response dueat 6",
+                  "value": "testing ticket today3",
                   "type": "text",
                   "uuid": "e5645112-4d47-45a5-9f70-cafe53e437b9"
                 },
                 {
                   "key": "description",
-                  "value": "test",
+                  "value": "",
                   "type": "text",
                   "uuid": "661e740b-df3c-43e3-bbda-26d7fc061811"
                 },
@@ -193,7 +193,7 @@
                 },
                 {
                   "key": "otherDetail",
-                  "value": "asdasd",
+                  "value": "asd",
                   "type": "text",
                   "uuid": "493effd3-3b66-485b-95d1-a4733ccf31a8"
                 }
@@ -227,7 +227,7 @@
                 },
                 {
                   "key": "description",
-                  "value": "Testing Update with file",
+                  "value": "",
                   "type": "text"
                 },
                 {
@@ -251,13 +251,13 @@
               ]
             },
             "url": {
-              "raw": "{{localhost}}ticket/update/c2ee380b-b3d0-47e6-bca8-ffa73a610076",
+              "raw": "{{localhost}}ticket/update/0a3f7a29-fce1-4e46-8ac3-ddb9ccb7ef04",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "update",
-                "c2ee380b-b3d0-47e6-bca8-ffa73a610076"
+                "0a3f7a29-fce1-4e46-8ac3-ddb9ccb7ef04"
               ],
               "query": [
                 {
@@ -279,7 +279,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"statusId\": 5\r\n}",
+              "raw": "{\r\n    \"statusId\": 8,\r\n    \"reason\": \"Bukan pekerjaan IT\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -287,13 +287,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/changestatus/03add359-7455-42ed-abf8-56185ed8e485",
+              "raw": "{{localhost}}ticket/changestatus/6408668a-f965-4941-98c9-9130eedaa59d",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
-                "03add359-7455-42ed-abf8-56185ed8e485"
+                "6408668a-f965-4941-98c9-9130eedaa59d"
               ]
             }
           },
@@ -324,12 +324,24 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}ticket/tickettoday",
+              "raw": "{{localhost}}ticket/tickettoday?page=1&limit=10",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "tickettoday"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "uuid": "b9ea870e-741c-484b-b179-d855041d2240"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "uuid": "62c61cde-95a8-4e94-b59f-e7e2cca671de"
+                }
               ]
             }
           },
@@ -742,7 +754,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"asdasd\",\r\n    \"categoryId\": 2,\r\n    \"estimatedMinutes\": 20,\r\n    \"defaultResponseMin\": 14,\r\n    \"defaultResolveMin\": 12\r\n}",
+              "raw": "{\r\n    \"name\": \"Priority1\",\r\n    \"categoryId\": 2,\r\n    \"estimatedMinutes\": 20,\r\n    \"defaultResponseMin\": 14,\r\n    \"defaultResolveMin\": 12,\r\n    \"priorityId\": 1\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -798,6 +810,25 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get by priority",
+          "id": "0b8677ce-9d71-4632-9e5f-b2d6a59d42c3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/priority/1",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "priority",
+                "1"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "e3782eed-adbf-4df3-99aa-721bb72a90f2"
@@ -839,22 +870,24 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/range?startDate=2026-03-01&endDate=2026-03-05",
+              "raw": "{{localhost}}technician/69708eb73e4fd122f49f8acf/range?startDate=2026-03-03&endDate=2026-03-12",
               "host": [
                 "{{localhost}}technician"
               ],
               "path": [
-                "6982f9047f9d1d1dbe5afcc7",
+                "69708eb73e4fd122f49f8acf",
                 "range"
               ],
               "query": [
                 {
                   "key": "startDate",
-                  "value": "2026-03-01"
+                  "value": "2026-03-03",
+                  "uuid": "f6d5747f-89bb-4ee3-b818-09c639ee755b"
                 },
                 {
                   "key": "endDate",
-                  "value": "2026-03-05"
+                  "value": "2026-03-12",
+                  "uuid": "87932d4f-e414-41a3-97b7-d7c7af764df0"
                 }
               ]
             }
@@ -869,7 +902,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{ \r\n    \"date\": \"2026-03-05\" \r\n}",
+              "raw": "{ \r\n    \"date\": \"2026-03-12\" \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -877,12 +910,12 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/daily",
+              "raw": "{{localhost}}technician/69708eb73e4fd122f49f8acf/daily",
               "host": [
                 "{{localhost}}technician"
               ],
               "path": [
-                "6982f9047f9d1d1dbe5afcc7",
+                "69708eb73e4fd122f49f8acf",
                 "daily"
               ]
             }
@@ -905,12 +938,12 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}technician/6982f9047f9d1d1dbe5afcc7/generate",
+              "raw": "{{localhost}}technician/69708eb73e4fd122f49f8acf/generate",
               "host": [
                 "{{localhost}}technician"
               ],
               "path": [
-                "6982f9047f9d1d1dbe5afcc7",
+                "69708eb73e4fd122f49f8acf",
                 "generate"
               ]
             }
@@ -931,7 +964,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"comment\": \"Testing COmment\",\r\n    \"isInternal\": false\r\n}",
+              "raw": "{\r\n    \"comment\": \"Testing COmment\",\r\n    \"isInternal\": false\r\n}\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1014,7 +1047,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"comment\": \"Testing update comment\"\r\n}",
+              "raw": "{\r\n    \"comment\": \"Testing update comment 2\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1076,7 +1109,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\": \"Testingupdate2\"\r\n}",
+              "raw": "{\r\n    \"name\": \"Access\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1084,13 +1117,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}category/update/5",
+              "raw": "{{server}}category/update/4",
               "host": [
-                "{{localhost}}category"
+                "{{server}}category"
               ],
               "path": [
                 "update",
-                "5"
+                "4"
               ]
             }
           },
@@ -1144,6 +1177,93 @@
         }
       ],
       "id": "c36abb8c-1acb-45ce-8bb2-371f91a6fa21"
+    },
+    {
+      "name": "Schedule",
+      "item": [
+        {
+          "name": "get",
+          "id": "19e101fa-d5a5-4157-8d32-3639b955e751",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}schedule/",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "1a8d2b2b-73e5-4a08-857a-70deaffdb66b",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "// 69659eb33e4fd122f49f38f8 = ridwan\r\n// 6982f9047f9d1d1dbe5afcc7 = bayu\r\n// 6964615c3e4fd122f49f2937 = padlan\r\n// 6962733d3e4fd122f49f245a = maksudi\r\n\r\n\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 1,\r\n    \"technicianIds\": [\r\n        \"69659eb33e4fd122f49f38f8\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 2,\r\n    \"technicianIds\": [\r\n        \"6982f9047f9d1d1dbe5afcc7\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 3,\r\n    \"technicianIds\": [\r\n        \"6964615c3e4fd122f49f2937\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 4,\r\n    \"technicianIds\": [\r\n        \"6962733d3e4fd122f49f245a\"\r\n    ],\r\n    \"excludeDates\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}schedule/weekly",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                "weekly"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "487f7d91-0bdc-4756-9f7d-1e99f5de9267",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}schedule/bc042c5e-1e42-4483-9c7e-c7f4f3f5a869",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                "bc042c5e-1e42-4483-9c7e-c7f4f3f5a869"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "bdc1fbc8-bcae-406c-9e70-0db3fcb49c2b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}schedule/",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "813b9d45-1d71-4548-b25a-584364d22716"
     }
   ],
   "auth": {
@@ -1151,7 +1271,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MzY1MTE3OCwiZXhwIjoxNzczNjYxOTc4fQ.QpLlMO1E3rE6Bcu_tfYo6Mt9TeYN0hCMI4GjwCXFlFY",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDg1NjQ5NSwiZXhwIjoxNzc0ODY3Mjk1fQ.IqF1N6RplMUsmcdEliXNA7rT0LHUgcIm1ti4qXZKElc",
         "type": "string"
       }
     ]
