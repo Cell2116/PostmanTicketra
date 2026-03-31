@@ -1245,18 +1245,18 @@
           "response": []
         },
         {
-          "name": "New Request",
-          "id": "bdc1fbc8-bcae-406c-9e70-0db3fcb49c2b",
+          "name": "getByfilter",
+          "id": "e42c6b65-a6c4-415d-a677-4b175e4b0ebe",
           "request": {
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}schedule/",
+              "raw": "{{localhost}}schedule/getbyfilter",
               "host": [
                 "{{localhost}}schedule"
               ],
               "path": [
-                ""
+                "getbyfilter"
               ]
             }
           },
@@ -1271,7 +1271,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDg1NjQ5NSwiZXhwIjoxNzc0ODY3Mjk1fQ.IqF1N6RplMUsmcdEliXNA7rT0LHUgcIm1ti4qXZKElc",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDkyNTU5MiwiZXhwIjoxNzc0OTM2MzkyfQ.q8rHZ_hR5IhU3jBrT99epk3rZ3LxmDb2s4LNFFA_xts",
         "type": "string"
       }
     ]
