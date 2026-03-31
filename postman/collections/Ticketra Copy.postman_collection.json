@@ -1251,12 +1251,78 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}schedule/getbyfilter",
+              "raw": "{{localhost}}schedule/getbyfilter?startDate=2026-03-31&endDate=2026-03-31",
               "host": [
                 "{{localhost}}schedule"
               ],
               "path": [
                 "getbyfilter"
+              ],
+              "query": [
+                {
+                  "key": "technicianId",
+                  "value": "6982f9047f9d1d1dbe5afcc7",
+                  "type": "text",
+                  "uuid": "d491c519-f4e4-44e8-b718-9460d2ea9917",
+                  "disabled": true
+                },
+                {
+                  "key": "startDate",
+                  "value": "2026-03-31",
+                  "type": "text",
+                  "uuid": "8a695c31-7b73-4971-b56b-2d75a7a9c214"
+                },
+                {
+                  "key": "endDate",
+                  "value": "2026-03-31",
+                  "type": "text",
+                  "uuid": "f2c3b03f-f588-4f77-853f-a4660f7815da"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all request",
+          "id": "de994027-cf00-4aff-8040-e0833153e1e8",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}schedule/allrequest",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                "allrequest"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "shift",
+          "id": "c02c2918-5c0d-4f27-a0e7-837f08a1ec94",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "// {\r\n//     \"type\": \"SWAP\",\r\n//     \"scheduleIdA\": \"c32100b1-8494-46e7-a077-fdde7235fd46\",\r\n//     \"scheduleIdB\": \"395f0a9f-20a5-4384-9e38-a25658011ee1\",\r\n//     \"reason\": \"Ada keperluan mendadak\"\r\n// }\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}schedule/",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                ""
               ]
             }
           },
@@ -1271,7 +1337,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDkyNTU5MiwiZXhwIjoxNzc0OTM2MzkyfQ.q8rHZ_hR5IhU3jBrT99epk3rZ3LxmDb2s4LNFFA_xts",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDkzNzkxNCwiZXhwIjoxNzc0OTQ4NzE0fQ.KGcUiv28j2hyem2_5YpOZjOsvyPnMSmWHGAco3oWNhg",
         "type": "string"
       }
     ]
