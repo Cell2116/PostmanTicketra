@@ -1251,7 +1251,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}schedule/getbyfilter?startDate=2026-03-31&endDate=2026-03-31",
+              "raw": "{{localhost}}schedule/getbyfilter?startDate=2026-04-02&endDate=2026-04-02",
               "host": [
                 "{{localhost}}schedule"
               ],
@@ -1268,14 +1268,12 @@
                 },
                 {
                   "key": "startDate",
-                  "value": "2026-03-31",
-                  "type": "text",
+                  "value": "2026-04-02",
                   "uuid": "8a695c31-7b73-4971-b56b-2d75a7a9c214"
                 },
                 {
                   "key": "endDate",
-                  "value": "2026-03-31",
-                  "type": "text",
+                  "value": "2026-04-02",
                   "uuid": "f2c3b03f-f588-4f77-853f-a4660f7815da"
                 }
               ]
@@ -1309,7 +1307,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "// {\r\n//     \"type\": \"SWAP\",\r\n//     \"scheduleIdA\": \"c32100b1-8494-46e7-a077-fdde7235fd46\",\r\n//     \"scheduleIdB\": \"395f0a9f-20a5-4384-9e38-a25658011ee1\",\r\n//     \"reason\": \"Ada keperluan mendadak\"\r\n// }\r\n\r\n",
+              "raw": "{\r\n    \"type\": \"SWAP\",\r\n    \"scheduleIdA\": \"3ab5f16a-776f-42b9-9a9d-d437ca158c05\",\r\n    \"scheduleIdB\": \"f13923eb-7e12-43d9-8b81-5cb14f0b642d\",\r\n    \"reason\": \"Ada keperluan mendadak\"\r\n}\r\n\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1327,6 +1325,53 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "approve",
+          "id": "e9778bc4-c427-40c0-b84d-c522615c0b18",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}schedule/4da2a6c5-89d8-4276-8d65-04a51839f595/approve",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                "4da2a6c5-89d8-4276-8d65-04a51839f595",
+                "approve"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/Reject",
+          "id": "f3d30fdd-cfa6-4ff2-8de0-ab257538f105",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"rejectReason\": \"asdasdasd\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}schedule/4da2a6c5-89d8-4276-8d65-04a51839f595/reject",
+              "host": [
+                "{{localhost}}schedule"
+              ],
+              "path": [
+                "4da2a6c5-89d8-4276-8d65-04a51839f595",
+                "reject"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "813b9d45-1d71-4548-b25a-584364d22716"
@@ -1337,7 +1382,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDkzNzkxNCwiZXhwIjoxNzc0OTQ4NzE0fQ.KGcUiv28j2hyem2_5YpOZjOsvyPnMSmWHGAco3oWNhg",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3NTEwMzQ2MiwiZXhwIjoxNzc1MTE0MjYyfQ.cMg0xOOrfb3TwDcsgoD9C_t5XNtUomYY7DN1Ee3iwpE",
         "type": "string"
       }
     ]
