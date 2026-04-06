@@ -1009,13 +1009,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}comment/get/a830b346-d107-4d56-a8f7-1c12aa63ee87",
+              "raw": "{{localhost}}comment/get/859ffc8f-2433-41c6-9deb-74575d969c20",
               "host": [
                 "{{localhost}}comment"
               ],
               "path": [
                 "get",
-                "a830b346-d107-4d56-a8f7-1c12aa63ee87"
+                "859ffc8f-2433-41c6-9deb-74575d969c20"
               ]
             }
           },
@@ -1307,7 +1307,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"type\": \"SWAP\",\r\n    \"scheduleIdA\": \"3ab5f16a-776f-42b9-9a9d-d437ca158c05\",\r\n    \"scheduleIdB\": \"f13923eb-7e12-43d9-8b81-5cb14f0b642d\",\r\n    \"reason\": \"Ada keperluan mendadak\"\r\n}\r\n\r\n",
+              "raw": "{\r\n    \"type\": \"SWAP\",\r\n    \"scheduleIdA\": \"3ab5f16a-776f-42b9-9a9d-d437ca158c05\",\r\n    \"scheduleIdB\": \"2b998762-89b9-4c0f-99c1-9f3777d30f47\",\r\n    \"reason\": \"Ada keperluan mendadak\"\r\n}\r\n\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1375,6 +1375,58 @@
         }
       ],
       "id": "813b9d45-1d71-4548-b25a-584364d22716"
+    },
+    {
+      "name": "notification",
+      "item": [
+        {
+          "name": "get all",
+          "id": "776e366f-f40f-4997-bfa0-6c59ad55675d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}notification/get",
+              "host": [
+                "{{localhost}}notification"
+              ],
+              "path": [
+                "get"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "isRead",
+          "id": "a96230c3-db15-4ef6-801e-667b42d4ecf4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"isRead\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}notification/update/659d272f-4f70-4604-b281-f912063a35f0",
+              "host": [
+                "{{localhost}}notification"
+              ],
+              "path": [
+                "update",
+                "659d272f-4f70-4604-b281-f912063a35f0"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "420c7278-fac2-46f3-b54a-c107d43397f2"
     }
   ],
   "auth": {
@@ -1382,7 +1434,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3NTEwMzQ2MiwiZXhwIjoxNzc1MTE0MjYyfQ.cMg0xOOrfb3TwDcsgoD9C_t5XNtUomYY7DN1Ee3iwpE",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTQ2MDE1MSwiZXhwIjoxNzc1NDcwOTUxfQ.1reHf64rpkLi_H8-zBsDf2RIeuegXaPVTAjau0rKweA",
         "type": "string"
       }
     ]
