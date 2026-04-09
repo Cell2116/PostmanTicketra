@@ -1458,7 +1458,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": ""
+              "raw": "{{localhost}}notification/get/",
+              "host": [
+                "{{localhost}}notification"
+              ],
+              "path": [
+                "get",
+                ""
+              ]
             }
           },
           "response": []
