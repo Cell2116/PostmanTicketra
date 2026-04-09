@@ -1434,7 +1434,7 @@
           "response": []
         },
         {
-          "name": "get notif by receipt",
+          "name": "get notif superadmin",
           "id": "8d88a4d6-9168-488c-8329-cc2b49b81c3d",
           "request": {
             "method": "GET",
@@ -1447,6 +1447,18 @@
               "path": [
                 "getSuperadmin"
               ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get by receipt",
+          "id": "3d68aae4-103a-4775-abf6-15939610ae7f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
             }
           },
           "response": []
