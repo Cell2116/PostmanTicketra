@@ -470,6 +470,25 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get ticket by id",
+          "id": "2f2f5fe1-9cf3-4876-959c-93ef008969d0",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/get/",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "get",
+                ""
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "0372d977-3d35-46b4-a324-97c657b23856"
@@ -1394,12 +1413,19 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}notification/get",
+              "raw": "{{localhost}}notification/get?limit=20",
               "host": [
                 "{{localhost}}notification"
               ],
               "path": [
                 "get"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20",
+                  "uuid": "e7e675ee-8c77-4407-a25b-8e41e77c1fa0"
+                }
               ]
             }
           },
@@ -1479,7 +1505,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTY5ODQ0OSwiZXhwIjoxNzc1NzA5MjQ5fQ.B23iPGGGiFANpGtLo6jc1l4N3g82-Or-KWDiKZh1X7U",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTcxNjI0NywiZXhwIjoxNzc1NzI3MDQ3fQ.qihZg_RUmiViob16UevgM5xnp1Z0-TGq1leAVHk1z0U",
         "type": "string"
       }
     ]
