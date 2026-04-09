@@ -118,7 +118,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NDg1NjQ5NSwiZXhwIjoxNzc0ODY3Mjk1fQ.IqF1N6RplMUsmcdEliXNA7rT0LHUgcIm1ti4qXZKElc",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTUyNTM0NCwiZXhwIjoxNzc1NTM2MTQ0fQ.MOko-HWmvJ3DdOU9Y67EKVOAfKBQASe4arfhPkcfMiA",
                   "type": "string"
                 }
               ]
@@ -175,7 +175,8 @@
                   "key": "description",
                   "value": "",
                   "type": "text",
-                  "uuid": "661e740b-df3c-43e3-bbda-26d7fc061811"
+                  "uuid": "661e740b-df3c-43e3-bbda-26d7fc061811",
+                  "disabled": true
                 },
                 {
                   "key": "attachments",
@@ -187,7 +188,7 @@
                 },
                 {
                   "key": "workTypeId",
-                  "value": "",
+                  "value": "1",
                   "type": "text",
                   "uuid": "60ce15f9-e82d-4ad3-a7fb-801e34247127"
                 },
@@ -222,13 +223,14 @@
               "formdata": [
                 {
                   "key": "title",
-                  "value": "Tadinya ticket kelima tapi tetep 5",
+                  "value": "Tadinya ticket kelima tapi tetep 6",
                   "type": "text"
                 },
                 {
                   "key": "description",
                   "value": "",
-                  "type": "text"
+                  "type": "text",
+                  "disabled": true
                 },
                 {
                   "key": "categoryId",
@@ -247,17 +249,23 @@
                   "src": [
                     "/C:/Users/iotal/Downloads/All_About_Task-removebg-preview.png"
                   ]
+                },
+                {
+                  "key": "otherDetail",
+                  "value": "edit",
+                  "type": "text",
+                  "uuid": "24660753-ff97-44d8-adb4-95cf86a7ea37"
                 }
               ]
             },
             "url": {
-              "raw": "{{localhost}}ticket/update/0a3f7a29-fce1-4e46-8ac3-ddb9ccb7ef04",
+              "raw": "{{localhost}}ticket/update/eb5fb4a3-fb24-4a0b-a985-6facfa2ccf27",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "update",
-                "0a3f7a29-fce1-4e46-8ac3-ddb9ccb7ef04"
+                "eb5fb4a3-fb24-4a0b-a985-6facfa2ccf27"
               ],
               "query": [
                 {
@@ -279,7 +287,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"statusId\": 8,\r\n    \"reason\": \"Bukan pekerjaan IT\"\r\n}",
+              "raw": "{\r\n    \"statusId\": 5,\r\n    \"reason\": \"\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -287,13 +295,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/changestatus/6408668a-f965-4941-98c9-9130eedaa59d",
+              "raw": "{{localhost}}ticket/changestatus/f80e1e11-b536-4734-8e2f-a034e313e631",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
-                "6408668a-f965-4941-98c9-9130eedaa59d"
+                "f80e1e11-b536-4734-8e2f-a034e313e631"
               ]
             }
           },
@@ -1207,7 +1215,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "// 69659eb33e4fd122f49f38f8 = ridwan\r\n// 6982f9047f9d1d1dbe5afcc7 = bayu\r\n// 6964615c3e4fd122f49f2937 = padlan\r\n// 6962733d3e4fd122f49f245a = maksudi\r\n\r\n\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 1,\r\n    \"technicianIds\": [\r\n        \"69659eb33e4fd122f49f38f8\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 2,\r\n    \"technicianIds\": [\r\n        \"6982f9047f9d1d1dbe5afcc7\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 3,\r\n    \"technicianIds\": [\r\n        \"6964615c3e4fd122f49f2937\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n{\r\n    \"startDate\": \"2026-03-29\",\r\n    \"endDate\": \"2026-04-04\",\r\n    \"sourceShiftId\": 4,\r\n    \"technicianIds\": [\r\n        \"6962733d3e4fd122f49f245a\"\r\n    ],\r\n    \"excludeDates\": []\r\n}",
+              "raw": "// 69659eb33e4fd122f49f38f8 = ridwan\r\n// 6982f9047f9d1d1dbe5afcc7 = bayu\r\n// 6964615c3e4fd122f49f2937 = padlan\r\n// 6962733d3e4fd122f49f245a = maksudi\r\n\r\n\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 1,\r\n//     \"technicianIds\": [\r\n//         \"69659eb33e4fd122f49f38f8\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 2,\r\n//     \"technicianIds\": [\r\n//         \"6982f9047f9d1d1dbe5afcc7\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 3,\r\n//     \"technicianIds\": [\r\n//         \"6964615c3e4fd122f49f2937\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 4,\r\n//     \"technicianIds\": [\r\n//         \"6962733d3e4fd122f49f245a\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1251,7 +1259,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}schedule/getbyfilter?startDate=2026-04-02&endDate=2026-04-02",
+              "raw": "{{localhost}}schedule/getbyfilter?startDate=2026-04-07&endDate=2026-04-07",
               "host": [
                 "{{localhost}}schedule"
               ],
@@ -1268,12 +1276,12 @@
                 },
                 {
                   "key": "startDate",
-                  "value": "2026-04-02",
+                  "value": "2026-04-07",
                   "uuid": "8a695c31-7b73-4971-b56b-2d75a7a9c214"
                 },
                 {
                   "key": "endDate",
-                  "value": "2026-04-02",
+                  "value": "2026-04-07",
                   "uuid": "f2c3b03f-f588-4f77-853f-a4660f7815da"
                 }
               ]
@@ -1307,7 +1315,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"type\": \"SWAP\",\r\n    \"scheduleIdA\": \"3ab5f16a-776f-42b9-9a9d-d437ca158c05\",\r\n    \"scheduleIdB\": \"2b998762-89b9-4c0f-99c1-9f3777d30f47\",\r\n    \"reason\": \"Ada keperluan mendadak\"\r\n}\r\n\r\n",
+              "raw": "{\r\n    \"type\": \"SWAP\",\r\n    \"scheduleIdA\": \"2b998762-89b9-4c0f-99c1-9f3777d30f47\",\r\n    \"scheduleIdB\": \"f13923eb-7e12-43d9-8b81-5cb14f0b642d\",\r\n    \"reason\": \"Ada keperluan mendadak\"\r\n}\r\n\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1424,6 +1432,24 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get notif by receipt",
+          "id": "8d88a4d6-9168-488c-8329-cc2b49b81c3d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}notification/getSuperadmin",
+              "host": [
+                "{{localhost}}notification"
+              ],
+              "path": [
+                "getSuperadmin"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "420c7278-fac2-46f3-b54a-c107d43397f2"
@@ -1434,7 +1460,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTQ2MDE1MSwiZXhwIjoxNzc1NDcwOTUxfQ.1reHf64rpkLi_H8-zBsDf2RIeuegXaPVTAjau0rKweA",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTY5ODQ0OSwiZXhwIjoxNzc1NzA5MjQ5fQ.B23iPGGGiFANpGtLo6jc1l4N3g82-Or-KWDiKZh1X7U",
         "type": "string"
       }
     ]
