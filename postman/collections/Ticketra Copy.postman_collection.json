@@ -478,13 +478,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}ticket/get/",
+              "raw": "{{localhost}}ticket/get/6303bf60-ed2a-47f7-937a-91bfb33bee77",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "get",
-                ""
+                "6303bf60-ed2a-47f7-937a-91bfb33bee77"
               ]
             }
           },
