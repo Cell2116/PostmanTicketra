@@ -1498,6 +1498,123 @@
         }
       ],
       "id": "420c7278-fac2-46f3-b54a-c107d43397f2"
+    },
+    {
+      "name": "chat",
+      "item": [
+        {
+          "name": "create room",
+          "id": "42fb8249-6113-4e8e-8771-34c91d331b1f",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"OPEN\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}chat/createroom",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "createroom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create message",
+          "id": "67c01194-55ff-4671-8ea5-97b76fb862e6",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"content\": \"Testing message 1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}chat/createmessage/f054c793-4c01-4a93-b4ce-d39a8b1c1609",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "createmessage",
+                "f054c793-4c01-4a93-b4ce-d39a8b1c1609"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all room",
+          "id": "67134c28-4721-44e3-87f6-72f6233f90c8",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}chat/getall",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get room by id",
+          "id": "e21a0cfa-ee3e-4219-9291-4b2ac25bb94a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}chat/get/a7782c9c-3af5-4b18-a89d-a490d71ed52a",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "get",
+                "a7782c9c-3af5-4b18-a89d-a490d71ed52a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get room by user",
+          "id": "1a25e376-16dc-4168-91a5-1bc1135042a7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}chat/getbyuser/695e02498a6c288413b45564",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "getbyuser",
+                "695e02498a6c288413b45564"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7cb85455-29d2-4f73-bbbf-aa220753ee3d"
     }
   ],
   "auth": {
@@ -1505,7 +1622,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTcxNjI0NywiZXhwIjoxNzc1NzI3MDQ3fQ.qihZg_RUmiViob16UevgM5xnp1Z0-TGq1leAVHk1z0U",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTgwNjE5MSwiZXhwIjoxNzc1ODE2OTkxfQ.OqbBLbWQm6U9iZnWkGTNn0w_vCGEonuIdUa2-q3cW9I",
         "type": "string"
       }
     ]
