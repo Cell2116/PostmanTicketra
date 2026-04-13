@@ -1612,6 +1612,34 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "45ed7d55-992b-4d72-8b5e-131338fa4790",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\" : \"RESOLVED\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}chat/update/1bd1d072-dc2b-4190-8f96-f15cfb553faa",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "update",
+                "1bd1d072-dc2b-4190-8f96-f15cfb553faa"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "7cb85455-29d2-4f73-bbbf-aa220753ee3d"
@@ -1622,7 +1650,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTgwNjE5MSwiZXhwIjoxNzc1ODE2OTkxfQ.OqbBLbWQm6U9iZnWkGTNn0w_vCGEonuIdUa2-q3cW9I",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA0NTczMCwiZXhwIjoxNzc2MDU2NTMwfQ.8fFg1Ow3bg6dgP3l7DmU8UMN_gbFSU5NF8gjWgExFB0",
         "type": "string"
       }
     ]
