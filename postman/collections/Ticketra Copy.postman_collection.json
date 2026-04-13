@@ -118,7 +118,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NTUyNTM0NCwiZXhwIjoxNzc1NTM2MTQ0fQ.MOko-HWmvJ3DdOU9Y67EKVOAfKBQASe4arfhPkcfMiA",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA2Mjk3MiwiZXhwIjoxNzc2MDczNzcyfQ.QziRro-ux1qfAs1o4uvBt8P-rTuIFl4dXZoIV99x9GM",
                   "type": "string"
                 }
               ]
@@ -1495,6 +1495,25 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get notif technician",
+          "id": "88cbf84b-ffe0-4991-a53a-e319e8c5ded8",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}notification/gettech/69708eb73e4fd122f49f8acf",
+              "host": [
+                "{{localhost}}notification"
+              ],
+              "path": [
+                "gettech",
+                "69708eb73e4fd122f49f8acf"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "420c7278-fac2-46f3-b54a-c107d43397f2"
@@ -1582,13 +1601,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}chat/get/a7782c9c-3af5-4b18-a89d-a490d71ed52a",
+              "raw": "{{localhost}}chat/get/6c43f78c-3c13-4279-aab7-7b1abcb30037",
               "host": [
                 "{{localhost}}chat"
               ],
               "path": [
                 "get",
-                "a7782c9c-3af5-4b18-a89d-a490d71ed52a"
+                "6c43f78c-3c13-4279-aab7-7b1abcb30037"
               ]
             }
           },
@@ -1601,20 +1620,20 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}chat/getbyuser/695e02498a6c288413b45564",
+              "raw": "{{localhost}}chat/getbyuser/69708eb73e4fd122f49f8acf",
               "host": [
                 "{{localhost}}chat"
               ],
               "path": [
                 "getbyuser",
-                "695e02498a6c288413b45564"
+                "69708eb73e4fd122f49f8acf"
               ]
             }
           },
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "update status",
           "id": "45ed7d55-992b-4d72-8b5e-131338fa4790",
           "request": {
             "method": "PATCH",
@@ -1650,7 +1669,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA0NTczMCwiZXhwIjoxNzc2MDU2NTMwfQ.8fFg1Ow3bg6dgP3l7DmU8UMN_gbFSU5NF8gjWgExFB0",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA2Mjk3MiwiZXhwIjoxNzc2MDczNzcyfQ.QziRro-ux1qfAs1o4uvBt8P-rTuIFl4dXZoIV99x9GM",
         "type": "string"
       }
     ]
