@@ -856,6 +856,24 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "get recommendation",
+          "id": "deaa8f65-e2f0-4c48-95bb-f75a0b9192dd",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}worktype/getrec",
+              "host": [
+                "{{localhost}}worktype"
+              ],
+              "path": [
+                "getrec"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "e3782eed-adbf-4df3-99aa-721bb72a90f2"
@@ -1659,6 +1677,25 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "mark as read",
+          "id": "fff8330d-1e10-4258-87d3-a159cb88b48d",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}chat/markread/86480822-f086-4e00-a9ee-7903689bcbf8",
+              "host": [
+                "{{localhost}}chat"
+              ],
+              "path": [
+                "markread",
+                "86480822-f086-4e00-a9ee-7903689bcbf8"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "7cb85455-29d2-4f73-bbbf-aa220753ee3d"
@@ -1669,7 +1706,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA2Mjk3MiwiZXhwIjoxNzc2MDczNzcyfQ.QziRro-ux1qfAs1o4uvBt8P-rTuIFl4dXZoIV99x9GM",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjEzMTUzMSwiZXhwIjoxNzc2MTQyMzMxfQ.2bvw9YMIzGqt5wfJ2Djod3dmaiKKxNBsppYnJmaNnwU",
         "type": "string"
       }
     ]
