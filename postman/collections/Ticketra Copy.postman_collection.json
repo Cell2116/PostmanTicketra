@@ -93,7 +93,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA4ZWI3M2U0ZmQxMjJmNDlmOGFjZiIsImlhdCI6MTc3MjY5NTE4NSwiZXhwIjoxNzcyNzA1OTg1fQ.ouDfdlrzy5zSBudKuWeSibQgPtYaZRMt3bndaD86zR8",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjgyNDkzOCwiZXhwIjoxNzc2ODM1NzM4fQ.G4lMJRPjsb7qk80iIsMn42gXLrPWswVuPIhWIX8vTjM",
                   "type": "string"
                 }
               ]
@@ -129,6 +129,77 @@
               "raw": "{{localhost}}alltechnician",
               "host": [
                 "{{localhost}}alltechnician"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register user",
+          "id": "080703f6-af92-491e-9499-ed81d562c4ba",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjgyNDkzOCwiZXhwIjoxNzc2ODM1NzM4fQ.G4lMJRPjsb7qk80iIsMn42gXLrPWswVuPIhWIX8vTjM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Testing 2\",\r\n    \"email\":\"b@gmail.com\",\r\n    \"password\":\"testing2\",\r\n    \"noHp\": 82192312143,\r\n    \"departemen\":\"HPC\",\r\n    \"divisi\":\"IT\",\r\n    \"posisi\":\"User\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}register",
+              "host": [
+                "{{localhost}}register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Profile",
+          "id": "4f485b4f-febe-48ba-a761-d0984bf39122",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTgzZWNkYTBhYmNlOTNiMmE0NmZlNCIsImlhdCI6MTc3NjgyOTM0MCwiZXhwIjoxNzc2ODQwMTQwfQ.GPR9sk30WTk61VKtC0o_sVVuUe3oSCElbA0gT-ENMuA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Testing 2 Editted\",\r\n    \"email\":\"b@gmail.com\",\r\n    \"noHp\": 82192312143,\r\n    \"departemen\":\"HPC\",\r\n    \"divisi\":\"IT\",\r\n    \"posisi\":\"User\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{localhost}}updateprofile/69e83ecda0abce93b2a46fe4",
+              "host": [
+                "{{localhost}}updateprofile"
+              ],
+              "path": [
+                "69e83ecda0abce93b2a46fe4"
               ]
             }
           },
@@ -287,7 +358,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"statusId\": 5,\r\n    \"reason\": \"\"\r\n}",
+              "raw": "{\r\n    \"statusId\": 4,\r\n    \"reason\": \"\",\r\n    \"reasonPending\": \"Testing pending\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -295,13 +366,13 @@
               }
             },
             "url": {
-              "raw": "{{localhost}}ticket/changestatus/f80e1e11-b536-4734-8e2f-a034e313e631",
+              "raw": "{{localhost}}ticket/changestatus/cfd55a8f-423f-481b-a908-9a0aedd6bc08",
               "host": [
                 "{{localhost}}ticket"
               ],
               "path": [
                 "changestatus",
-                "f80e1e11-b536-4734-8e2f-a034e313e631"
+                "cfd55a8f-423f-481b-a908-9a0aedd6bc08"
               ]
             }
           },
@@ -724,12 +795,19 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}worktype/getall",
+              "raw": "{{localhost}}worktype/getall?name=SPK",
               "host": [
                 "{{localhost}}worktype"
               ],
               "path": [
                 "getall"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "SPK",
+                  "uuid": "9b3860bd-8696-44a4-9a32-1c6baad3fd52"
+                }
               ]
             }
           },
@@ -742,13 +820,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}worktype/getbyid/2",
+              "raw": "{{localhost}}worktype/getbyid/3",
               "host": [
                 "{{localhost}}worktype"
               ],
               "path": [
                 "getbyid",
-                "2"
+                "3"
               ]
             }
           },
@@ -761,13 +839,15 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}worktype/category/1",
+              "raw": "{{server}}/api/worktype/category/2",
               "host": [
-                "{{localhost}}worktype"
+                "{{server}}"
               ],
               "path": [
+                "api",
+                "worktype",
                 "category",
-                "1"
+                "2"
               ]
             }
           },
@@ -1125,11 +1205,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}category/get",
+              "raw": "{{server}}/api/category/get",
               "host": [
-                "{{localhost}}category"
+                "{{server}}"
               ],
               "path": [
+                "api",
+                "category",
                 "get"
               ]
             }
@@ -1252,7 +1334,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "// 69659eb33e4fd122f49f38f8 = ridwan\r\n// 6982f9047f9d1d1dbe5afcc7 = bayu\r\n// 6964615c3e4fd122f49f2937 = padlan\r\n// 6962733d3e4fd122f49f245a = maksudi\r\n\r\n\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 1,\r\n//     \"technicianIds\": [\r\n//         \"69659eb33e4fd122f49f38f8\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 2,\r\n//     \"technicianIds\": [\r\n//         \"6982f9047f9d1d1dbe5afcc7\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 3,\r\n//     \"technicianIds\": [\r\n//         \"6964615c3e4fd122f49f2937\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 4,\r\n//     \"technicianIds\": [\r\n//         \"6962733d3e4fd122f49f245a\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }",
+              "raw": "// 69659eb33e4fd122f49f38f8 = ridwan\r\n// 6982f9047f9d1d1dbe5afcc7 = bayu\r\n// 6964615c3e4fd122f49f2937 = padlan\r\n// 6962733d3e4fd122f49f245a = maksudi\r\n\r\n\r\n{\r\n    \"startDate\": \"2026-04-16\",\r\n    \"endDate\": \"2026-04-17\",\r\n    \"sourceShiftId\": 1,\r\n    \"technicianIds\": [\r\n        \"6982f9047f9d1d1dbe5afcc7\"\r\n    ],\r\n    \"excludeDates\": []\r\n}\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 2,\r\n//     \"technicianIds\": [\r\n//         \"6982f9047f9d1d1dbe5afcc7\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 3,\r\n//     \"technicianIds\": [\r\n//         \"6964615c3e4fd122f49f2937\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }\r\n// {\r\n//     \"startDate\": \"2026-03-29\",\r\n//     \"endDate\": \"2026-04-04\",\r\n//     \"sourceShiftId\": 4,\r\n//     \"technicianIds\": [\r\n//         \"6962733d3e4fd122f49f245a\"\r\n//     ],\r\n//     \"excludeDates\": []\r\n// }",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1706,7 +1788,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjEzMTUzMSwiZXhwIjoxNzc2MTQyMzMxfQ.2bvw9YMIzGqt5wfJ2Djod3dmaiKKxNBsppYnJmaNnwU",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTgzZWNkYTBhYmNlOTNiMmE0NmZlNCIsImlhdCI6MTc3NjgyOTM0MCwiZXhwIjoxNzc2ODQwMTQwfQ.GPR9sk30WTk61VKtC0o_sVVuUe3oSCElbA0gT-ENMuA",
         "type": "string"
       }
     ]
