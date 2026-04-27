@@ -93,7 +93,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjgyNDkzOCwiZXhwIjoxNzc2ODM1NzM4fQ.G4lMJRPjsb7qk80iIsMn42gXLrPWswVuPIhWIX8vTjM",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3Njg0ODQzOSwiZXhwIjoxNzc2ODU5MjM5fQ.rtxtQ8a7rZ4t427wBIch9kMtB4EBqSzz_WPVn6XEAiA",
                   "type": "string"
                 }
               ]
@@ -101,9 +101,21 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{localhost}}alluser",
+              "raw": "{{localhost}}alluser?page=1&limit=20",
               "host": [
                 "{{localhost}}alluser"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "20",
+                  "type": "text",
+                  "uuid": "55ccb565-d015-40f8-9c02-0bace9479860"
+                }
               ]
             }
           },
@@ -118,7 +130,7 @@
               "bearer": [
                 {
                   "key": "token",
-                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NjA2Mjk3MiwiZXhwIjoxNzc2MDczNzcyfQ.QziRro-ux1qfAs1o4uvBt8P-rTuIFl4dXZoIV99x9GM",
+                  "value": "as UserProfile[]",
                   "type": "string"
                 }
               ]
@@ -556,6 +568,42 @@
               "path": [
                 "get",
                 "6303bf60-ed2a-47f7-937a-91bfb33bee77"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get report",
+          "id": "f3837ac7-cc5b-4d75-b51c-70d659f72a7b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{localhost}}ticket/getreport/?page=1&limit=10&title=asd",
+              "host": [
+                "{{localhost}}ticket"
+              ],
+              "path": [
+                "getreport",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "uuid": "f55ebefb-7d7d-44f9-9f05-0a44999de96b"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "uuid": "0e769ab5-dc55-41d5-a51c-156e170083a4"
+                },
+                {
+                  "key": "title",
+                  "value": "asd",
+                  "uuid": "b4e936a8-1fa9-46fb-afe6-3fda8c2f7f32"
+                }
               ]
             }
           },
@@ -1788,7 +1836,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTgzZWNkYTBhYmNlOTNiMmE0NmZlNCIsImlhdCI6MTc3NjgyOTM0MCwiZXhwIjoxNzc2ODQwMTQwfQ.GPR9sk30WTk61VKtC0o_sVVuUe3oSCElbA0gT-ENMuA",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWUwMjQ5OGE2YzI4ODQxM2I0NTU2NCIsImlhdCI6MTc3NzI3ODMzNiwiZXhwIjoxNzc3Mjg5MTM2fQ.Ia2fOH4uBF_y09TC-xwIir425nU6wjmGYPd0wBTHuaA",
         "type": "string"
       }
     ]
